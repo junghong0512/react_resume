@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 
+import CustomTimeline from "../Timeline/Timeline";
 import profileImg from "../../assets/images/profileImg.jpg";
 
 import "./Profile.css";
@@ -9,7 +10,7 @@ const Profile = () => {
   return (
     <div className="profile container_shadow">
       <div className="profile_name">
-        <Typography className="name">정홍</Typography>
+        <Typography className="name">정 홍(Jung Hong)</Typography>
         <Typography className="title">Fullstact Developer</Typography>
       </div>
 
@@ -18,7 +19,7 @@ const Profile = () => {
       </figure>
 
       <div className="profile_information">
-        Insert Timeline
+        <CustomTimeline />
         <br />
         <button>Contact</button>
       </div>
