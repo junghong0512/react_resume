@@ -48,11 +48,12 @@ const Profile = () => {
           <CustomTimelineItem title="Title" text={resumeData.title} />
           <CustomTimelineItem title="Email" text={resumeData.email} />
 
-          {Object.keys(resumeData.socials).map((key) => (
+          {Object.keys(resumeData.socials).map((key, i) => (
             <CustomTimelineItem
               title={key}
               text={resumeData.socials[key].text}
               link={resumeData.socials[key].link}
+              key={i}
             />
           ))}
         </CustomTimeline>
