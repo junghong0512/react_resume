@@ -1,13 +1,6 @@
 import React from "react";
-import { Link, NavLink, withRouter } from "react-router-dom";
-import {
-  Button,
-  Form,
-  FormControl,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
+import { NavLink, withRouter } from "react-router-dom";
+import { Nav, Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HomeRounded, Telegram } from "@material-ui/icons";
 import resumeData from "../../utils/resumeData";
@@ -49,6 +42,17 @@ const Header = (props) => {
             }
           >
             Portfolio
+          </Nav.Link>
+
+          {/* Contact Link */}
+          <Nav.Link
+            as={NavLink}
+            to="/Contact"
+            className={
+              pathName === "/portfolio" ? "header_link_active" : "header_link"
+            }
+          >
+            Contact
           </Nav.Link>
         </Nav>
 
