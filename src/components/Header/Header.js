@@ -12,7 +12,8 @@ const Header = (props) => {
   const pathName = window.location.pathname;
 
   return (
-    <Navbar expand="lg" sticky="top" className="header">
+    // <Navbar expand="lg" sticky="top" className="header">
+    <Navbar expand="lg" className="header">
       {/* Home Link */}
       <Nav.Link as={NavLink} to="/" className="header_navlink">
         <Navbar.Brand className="header_home">
@@ -47,9 +48,9 @@ const Header = (props) => {
           {/* Contact Link */}
           <Nav.Link
             as={NavLink}
-            to="/Contact"
+            to="/contact"
             className={
-              pathName === "/portfolio" ? "header_link_active" : "header_link"
+              pathName === "/contact" ? "header_link_active" : "header_link"
             }
           >
             Contact

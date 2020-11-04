@@ -4,6 +4,11 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
 
+import WebIcon from "@material-ui/icons/Web";
+import WbIncandescentOutlinedIcon from "@material-ui/icons/WbIncandescentOutlined";
+import QuestionAnswerOutlinedIcon from "@material-ui/icons/QuestionAnswerOutlined";
+import BatteryChargingFullIcon from "@material-ui/icons/BatteryChargingFull";
+
 export const resumeData = {
   name: "정 홍",
   title: "Full Stack Developer",
@@ -75,6 +80,59 @@ export const resumeData = {
       date: "2007.03 - 2010.02",
       description:
         "현대고등학교 졸업. 고등학교 시절을 돌이켜보자면 누구보다도 열심히 농구를 하고, 수학을 좋아했던 기억.",
+    },
+  ],
+  services: [
+    {
+      title: "Web Development",
+      description: "1년 이상 집중해서 웹개발에 올인했습니다.",
+      icon: <WebIcon />,
+    },
+    {
+      title: "Creativity",
+      description:
+        "개발 뿐만이 아니라 어떠한 문제에 있어서도 해결할 수 있는 창의력과 문제해결 능력을 가지고 있습니다.",
+      icon: <WbIncandescentOutlinedIcon />,
+    },
+    {
+      title: "Communication",
+      description: "누구와도 편하게 대화하고 소통할 수 있습니다.",
+      icon: <QuestionAnswerOutlinedIcon />,
+    },
+    {
+      title: "Energy",
+      description:
+        "결과를 얻어내기 까지 방전되지 않습니다. 정신적 체력과 육체적 체력 모두 자신있습니다.",
+      icon: <BatteryChargingFullIcon />,
+    },
+  ],
+  skills: [
+    {
+      title: "front-end",
+      list: [
+        { name: "Javascript", skill: 90 },
+        { name: "ReactJS", skill: 90 },
+        { name: "Tailwind CSS", skill: 70 },
+        { name: "Bootstrap", skill: 80 },
+        { name: "Material UI", skill: 80 },
+      ],
+    },
+    {
+      title: "back-end",
+      list: [
+        { name: "NodeJS", skill: 90 },
+        { name: "Python", skill: 90 },
+        { name: "Django", skill: 80 },
+      ],
+    },
+    {
+      title: "database",
+      list: [
+        { name: "NodeJS", skill: 90 },
+        { name: "MongoDB", skill: 90 },
+        { name: "AWS EC2", skill: 80 },
+        { name: "My SQL", skill: 80 },
+      ],
     },
   ],
 };
