@@ -17,7 +17,7 @@ export const resumeData = {
   job: "Freelancer",
   kakao: "junghong0512",
   phone: "010-9956-4014",
-  address: "강남구 신사동 554-17 5층",
+  address: "서울 강남구 신사동 554-17 5층",
   socials: {
     facebook: {
       link:
@@ -132,6 +132,14 @@ export const resumeData = {
         { name: "MongoDB", skill: 90 },
         { name: "AWS EC2", skill: 80 },
         { name: "My SQL", skill: 80 },
+      ],
+    },
+    {
+      title: "certificate",
+      list: [
+        { name: "정보처리기사", skill: 100 },
+        { name: "MOS PowerPoint", skill: 100 },
+        { name: "MOS Exel", skill: 100 },
       ],
     },
   ],

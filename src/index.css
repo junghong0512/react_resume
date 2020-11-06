@@ -8,7 +8,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("./assets/images/bg.jpg");
+  background: url("./assets/images/landscape-1994685_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-x: hidden;
 }
 
