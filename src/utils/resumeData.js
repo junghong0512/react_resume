@@ -186,11 +186,11 @@ export const resumeData = {
     // Project 2.
     {
       tag: "React",
-      caption: "Building E-Commerse App with React",
+      caption: "Building E-Commerse App with ReactJS",
       skills: ["React", "Redux", "Express", "NodeJS", "MongoDB", "Mongoose"],
       image: [
         "https://cdn.pixabay.com/photo/2019/09/30/15/23/online-shopping-4516043_1280.jpg",
-        "https://pixabay.com/photos/ecommerce-online-shopping-marketing-3563183",
+        "https://cdn.pixabay.com/photo/2018/07/26/09/56/ecommerce-3563183_1280.jpg",
       ],
       title: "E-commerce app with React",
       description:
@@ -210,7 +210,7 @@ export const resumeData = {
     // Project 3.
     {
       tag: "Django",
-      caption: "Building a Airbnb App with Django",
+      caption: "Building a Airbnb App with Python and Django",
       skills: [
         "Python",
         "Django",
@@ -226,9 +226,8 @@ export const resumeData = {
         "https://i.pinimg.com/564x/92/55/b7/9255b7740f08665695a9d03b46fde885.jpg",
         "https://i.pinimg.com/564x/f0/6a/f6/f06af6a4c0dd85055ff3d0fa4cbb956a.jpg",
       ],
-      title: "E-commerce app with React",
-      description:
-        "Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoose.",
+      title: "Airbnb app using Django",
+      description: "Cloning Airbnb with Python, Django, Tailwind and more...",
       links: [
         {
           link: "https://hongshop.herokuapp.com/",

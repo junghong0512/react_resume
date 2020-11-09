@@ -21,14 +21,10 @@ const Portfolio = () => {
   const [tabValue, setTabValue] = useState("All");
   const [projectDialog, setProjectDialog] = useState(false);
 
-  // const ProjectDialog = () => (
-
-  // );
-
   return (
     <Grid container className="section pt_45 pb_45">
       {/* Title */}
-      <Grid item className="section_title mb_30">
+      <Grid item className="section_title mb_20">
         <span></span>
         <h6 className="section_title_text">Portfolio</h6>
       </Grid>
@@ -38,7 +34,7 @@ const Portfolio = () => {
         <Tabs
           value={tabValue}
           indicatorColor="primary"
-          className="custom_tabs"
+          className="customTabs"
           onChange={(event, newValue) => setTabValue(newValue)}
         >
           <Tab
@@ -54,7 +50,7 @@ const Portfolio = () => {
                 label={tag}
                 value={tag}
                 className={
-                  tabValue === "All"
+                  tabValue === tag
                     ? "customTabs_item active"
                     : "customTabs_item"
                 }
@@ -66,11 +62,11 @@ const Portfolio = () => {
       </Grid>
       {/* Projects */}
       <Grid item xs={12}>
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
           {resumeData.projects.map((project, index) => (
             <>
               {tabValue === "All" || tabValue === project.tag ? (
-                <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
+                <Grid item xs={12} sm={6} md={4} key={index}>
                   <Grow in timeout={1000}>
                     <Card
                       className="customCard"
@@ -83,12 +79,15 @@ const Portfolio = () => {
                           title={project.title}
                         />
                         <CardContent>
-                          <Typography className="customCard_title">
+                          <Typography
+                            variant="body2"
+                            className="customCard_title"
+                          >
                             {project.title}
                           </Typography>
                           <Typography
-                            variant="body2"
-                            className="customCard_description"
+                            variant="caption"
+                            className="customCard_caption"
                           >
                             {project.caption}
                           </Typography>
@@ -103,11 +102,22 @@ const Portfolio = () => {
         </Grid>
       </Grid>
 
-      <Dialog open={projectDialog} onClose={() => setProjectDialog(false)}>
+      <Dialog
+        className="projectDialog"
+        open={projectDialog}
+        onClose={() => setProjectDialog(false)}
+      >
         <DialogTitle onClose={() => setProjectDialog(false)}>
           {projectDialog.title}
         </DialogTitle>
-        <img src="" alt="" className="projectDialog_image" />
+        {projectDialog.image ? (
+          <img
+            src={projectDialog.image[1]}
+            alt={projectDialog.title}
+            className="projectDialog_image"
+          />
+        ) : null}
+
         <DialogContent>
           <Typography className="projectDialog_description">
             {projectDialog.description}
