@@ -94,11 +94,15 @@ const Contact = () => {
           </Grid>
         </Grid>
         <Grid item xs={12}>
-          <Grid item className="section_title mb_30">
-            <span></span>
-            <h6 className="section_title_text">My Location</h6>
+          <Grid container>
+            <Grid item className="section_title mb_30">
+              <span></span>
+              <h6 className="section_title_text">My Location</h6>
+            </Grid>
+            <Grid item xs={12}>
+              <Map />
+            </Grid>
           </Grid>
-          <Map />
         </Grid>
       </Grid>
     </>
