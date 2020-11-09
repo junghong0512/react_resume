@@ -72,7 +72,7 @@ const Portfolio = () => {
                       className="customCard"
                       onClick={() => setProjectDialog(project)}
                     >
-                      <CardActionArea>
+                      <CardActionArea className="customCard_action_area">
                         <CardMedia
                           className="customCard_image"
                           image={project.image[0]}

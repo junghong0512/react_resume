@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, withRouter } from "react-router-dom";
+import { Link, NavLink, withRouter } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HomeRounded, Telegram } from "@material-ui/icons";
@@ -68,7 +68,9 @@ const Header = (props) => {
               {resumeData.socials[key].icon}
             </a>
           ))}
-          <CustomButton text={"Hire Me"} icon={<Telegram />} />
+          <Link to="/contact" className="header_button_link">
+            <CustomButton text={"Hire Me"} icon={<Telegram />} />
+          </Link>
         </div>
       </Navbar.Collapse>
     </Navbar>

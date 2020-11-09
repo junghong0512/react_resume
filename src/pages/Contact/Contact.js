@@ -1,7 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
 
-import { Grid, Icon, Paper, TextField, Typography } from "@material-ui/core";
+import { Grid, TextField, Typography } from "@material-ui/core";
 import EmailIcon from "@material-ui/icons/Email";
 
 import CustomButton from "../../components/Button/Button";
@@ -22,7 +22,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert("이메일 확인 후 연락드리겠습니다. 감사합니다.");
         },
         (error) => {
           console.log(error.text);

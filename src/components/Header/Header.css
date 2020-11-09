@@ -49,3 +49,7 @@
   margin-right: 12px;
   color: darkslategrey;
 }
+
+.header .header_button_link:hover {
+  text-decoration: none;
+}
