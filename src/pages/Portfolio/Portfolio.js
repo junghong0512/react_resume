@@ -78,7 +78,7 @@ const Portfolio = () => {
                           image={project.image[0]}
                           title={project.title}
                         />
-                        <CardContent>
+                        <CardContent className="customCard_content">
                           <Typography
                             variant="body2"
                             className="customCard_title"
@@ -124,12 +124,13 @@ const Portfolio = () => {
           </Typography>
         </DialogContent>
         <DialogActions className="projectDialog_actions">
-          {projectDialog?.links?.map((link) => (
+          {projectDialog?.links?.map((link, index) => (
             <a
               href={link.link}
               className="projectDialog_icon"
               target="_blank"
               rel="noreferrer"
+              key={index}
             >
               {link.icon}
             </a>

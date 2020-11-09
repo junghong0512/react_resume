@@ -1,4 +1,6 @@
 import React from "react";
+import emailjs from "emailjs-com";
+
 import { Grid, Icon, Paper, TextField, Typography } from "@material-ui/core";
 import EmailIcon from "@material-ui/icons/Email";
 
@@ -8,6 +10,27 @@ import "./Contact.css";
 import Map from "../../components/Map/Map";
 
 const Contact = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_02rv9cs",
+        "template_ep39qyn",
+        e.target,
+        "user_PPPwlXKxf4qqPvA9YypQI"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <>
       {/* Contact */}
@@ -20,26 +43,38 @@ const Contact = () => {
               <h6 className="section_title_text">Contact Form</h6>
             </Grid>
             <Grid item xs={12}>
-              <Grid container spacing={3}>
-                <Grid item xs={12} sm={6}>
-                  <TextField fullWidth name="name" label="Name" />
+              <form onSubmit={sendEmail}>
+                <Grid container spacing={3}>
+                  <Grid item xs={12} sm={6}>
+                    <TextField fullWidth name="name" label="Name" />
+                  </Grid>
+                  <Grid item xs={12} sm={6}>
+                    <TextField fullWidth name="email" label="Email" />
+                  </Grid>
+                  <Grid item xs={12} sm={6}>
+                    <TextField fullWidth name="title" label="Title" />
+                  </Grid>
+                  <Grid item xs={12} sm={6}>
+                    <TextField fullWidth name="company" label="Company" />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      fullWidth
+                      name="message"
+                      label="Message"
+                      multiline
+                      rows={4}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <CustomButton
+                      type="submit"
+                      text="Submit"
+                      icon={<EmailIcon />}
+                    />
+                  </Grid>
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField fullWidth name="email" label="Email" />
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField
-                    fullWidth
-                    name="message"
-                    label="Message"
-                    multiline
-                    rows={4}
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <CustomButton text="Submit" icon={<EmailIcon />} />
-                </Grid>
-              </Grid>
+              </form>
             </Grid>
           </Grid>
         </Grid>
@@ -83,7 +118,7 @@ const Contact = () => {
             <Grid item xs={12}>
               <Grid container className="contactInfo_socialsContainer">
                 {Object.keys(resumeData.socials).map((key, index) => (
-                  <Grid item className="contactInfo_social">
+                  <Grid item className="contactInfo_social" key={index}>
                     <a href={resumeData.socials[key].link} about="_blank">
                       {resumeData.socials[key].icon}
                     </a>

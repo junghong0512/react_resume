@@ -186,7 +186,7 @@ export const resumeData = {
     // Project 2.
     {
       tag: "React",
-      caption: "Building E-Commerse App with ReactJS",
+      caption: "Building a e-Commerse App with ReactJS",
       skills: ["React", "Redux", "Express", "NodeJS", "MongoDB", "Mongoose"],
       image: [
         "https://cdn.pixabay.com/photo/2019/09/30/15/23/online-shopping-4516043_1280.jpg",
