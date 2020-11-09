@@ -4,6 +4,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
 
+import SlideshowIcon from "@material-ui/icons/Slideshow";
 import WebIcon from "@material-ui/icons/Web";
 import WbIncandescentOutlinedIcon from "@material-ui/icons/WbIncandescentOutlined";
 import QuestionAnswerOutlinedIcon from "@material-ui/icons/QuestionAnswerOutlined";
@@ -140,6 +141,103 @@ export const resumeData = {
         { name: "정보처리기사", skill: 100 },
         { name: "MOS PowerPoint", skill: 100 },
         { name: "MOS Exel", skill: 100 },
+      ],
+    },
+  ],
+  projects: [
+    // Project 1.
+    {
+      tag: "Javascript",
+      caption: "Clonging a Youtube with Vanilla and NodeJS",
+      skills: [
+        "Javascript",
+        "NodeJS",
+        "ES6",
+        "Express",
+        "Babel",
+        "Pug",
+        "Passport",
+        "AJAX",
+        "Webpack",
+        "SCSS",
+        "MongoDB",
+        "Mongoose",
+        "Multer",
+        "ESLint",
+      ],
+      image: [
+        "https://cdn.pixabay.com/photo/2018/12/13/19/39/youtube-3873587_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/12/13/19/39/youtube-3873587_1280.jpg",
+      ],
+      title: "Youtube Clone Coding",
+      description: "Clonging a Youtube with Vanilla and NodeJS",
+      links: [
+        {
+          link: "https://dry-plains-77031.herokuapp.com",
+          icon: <SlideshowIcon />,
+        },
+        {
+          link: "https://github.com/junghong91/wetube",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+
+    // Project 2.
+    {
+      tag: "React",
+      caption: "Building E-Commerse App with React",
+      skills: ["React", "Redux", "Express", "NodeJS", "MongoDB", "Mongoose"],
+      image: [
+        "https://cdn.pixabay.com/photo/2019/09/30/15/23/online-shopping-4516043_1280.jpg",
+        "https://pixabay.com/photos/ecommerce-online-shopping-marketing-3563183",
+      ],
+      title: "E-commerce app with React",
+      description:
+        "Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoose.",
+      links: [
+        {
+          link: "https://hongshop.herokuapp.com/",
+          icon: <SlideshowIcon />,
+        },
+        {
+          link: "https://github.com/junghong91/React_Ecommerse",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+
+    // Project 3.
+    {
+      tag: "Django",
+      caption: "Building a Airbnb App with Django",
+      skills: [
+        "Python",
+        "Django",
+        "Tailwind CSS",
+        "HTML5",
+        "Gulp",
+        "ES6",
+        "Mailgun",
+        "AWS EB",
+        "AWS S3",
+      ],
+      image: [
+        "https://i.pinimg.com/564x/92/55/b7/9255b7740f08665695a9d03b46fde885.jpg",
+        "https://i.pinimg.com/564x/f0/6a/f6/f06af6a4c0dd85055ff3d0fa4cbb956a.jpg",
+      ],
+      title: "E-commerce app with React",
+      description:
+        "Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoose.",
+      links: [
+        {
+          link: "https://hongshop.herokuapp.com/",
+          icon: <SlideshowIcon />,
+        },
+        {
+          link: "https://github.com/junghong91/airbnb-clone",
+          icon: <GitHubIcon />,
+        },
       ],
     },
   ],

@@ -73,13 +73,7 @@ const Contact = () => {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography className="contactInfo_item">
-                    <span>Birth: </span>
-                    {resumeData.birthdate}
-                  </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                  <Typography className="contactInfo_item">
-                    <span>Kakao: </span>
+                    <span>Kakao ID: </span>
                     {resumeData.kakao}
                   </Typography>
                 </Grid>
