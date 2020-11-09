@@ -5,6 +5,7 @@ import EmailIcon from "@material-ui/icons/Email";
 import CustomButton from "../../components/Button/Button";
 import resumeData from "../../utils/resumeData";
 import "./Contact.css";
+import Map from "../../components/Map/Map";
 
 const Contact = () => {
   return (
@@ -91,6 +92,13 @@ const Contact = () => {
               </Grid>
             </Grid>
           </Grid>
+        </Grid>
+        <Grid item xs={12}>
+          <Grid item className="section_title mb_30">
+            <span></span>
+            <h6 className="section_title_text">My Location</h6>
+          </Grid>
+          <Map />
         </Grid>
       </Grid>
     </>
