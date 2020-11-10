@@ -173,10 +173,12 @@ export const resumeData = {
       description: "Clonging a Youtube with Vanilla and NodeJS",
       links: [
         {
+          info: "Detail",
           link: "https://dry-plains-77031.herokuapp.com",
           icon: <SlideshowIcon />,
         },
         {
+          info: "Github",
           link: "https://github.com/junghong91/wetube",
           icon: <GitHubIcon />,
         },
@@ -194,13 +196,15 @@ export const resumeData = {
       ],
       title: "E-commerce app with React",
       description:
-        "Build a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoose.",
+        "Building a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoose.",
       links: [
         {
+          info: "Detail",
           link: "https://hongshop.herokuapp.com/",
           icon: <SlideshowIcon />,
         },
         {
+          info: "Github",
           link: "https://github.com/junghong91/React_Ecommerse",
           icon: <GitHubIcon />,
         },
@@ -230,10 +234,12 @@ export const resumeData = {
       description: "Cloning Airbnb with Python, Django, Tailwind and more...",
       links: [
         {
+          info: "Detail",
           link: "https://hongshop.herokuapp.com/",
           icon: <SlideshowIcon />,
         },
         {
+          info: "Github",
           link: "https://github.com/junghong91/airbnb-clone",
           icon: <GitHubIcon />,
         },

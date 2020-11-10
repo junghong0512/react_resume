@@ -1,6 +1,7 @@
 /* Tabs */
 
 .customTabs {
+  margin-bottom: 10px;
 }
 
 .customTabs .customTabs_item {
@@ -8,8 +9,8 @@
   min-width: 0px;
   margin-right: 20px;
   text-transform: inherit;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 500 !important;
   outline-width: 0px;
 }
 
@@ -30,6 +31,10 @@
   outline-width: 0px;
 }
 
+.customCard .MuiButtonBase-root {
+  outline-width: 0px;
+}
+
 .customCard .customCard_image {
   height: 140px;
 }
@@ -47,12 +52,20 @@
 
 /* Dialog */
 
-.projectDialog .projectDialog_image {
-  max-height: 300px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center center;
+.projectDialog .MuiPaper-root {
+  height: 90%;
+  width: 90%;
 }
+
+.projectDialog .projectDialog_slider {
+  margin-bottom: 25px;
+}
+
+.projectDialog .projectDialog_title {
+  font-size: 25px;
+  font-weight: 500;
+}
+
 .projectDialog .projectDialog_description {
   margin-top: 10px !important;
 }

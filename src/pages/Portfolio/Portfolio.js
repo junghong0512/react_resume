@@ -14,6 +14,11 @@ import {
   Tabs,
   Typography,
 } from "@material-ui/core";
+
+import AwesomeSlider from "react-awesome-slider";
+import AwesomeSliderStyles from "react-awesome-slider/src/styles";
+
+import CustomButton from "../../components/Button/Button";
 import resumeData from "../../utils/resumeData";
 import "./Portfolio.css";
 
@@ -30,10 +35,11 @@ const Portfolio = () => {
       </Grid>
 
       {/* Tabs */}
-      <Grid item xs={12}>
+      <Grid item xs={12} className="tabsContainer">
         <Tabs
           value={tabValue}
-          indicatorColor="primary"
+          textColor="red"
+          indicatorColor="red"
           className="customTabs"
           onChange={(event, newValue) => setTabValue(newValue)}
         >
@@ -67,7 +73,7 @@ const Portfolio = () => {
             <>
               {tabValue === "All" || tabValue === project.tag ? (
                 <Grid item xs={12} sm={6} md={4} key={index}>
-                  <Grow in timeout={1000}>
+                  <Grow in timeout={1500}>
                     <Card
                       className="customCard"
                       onClick={() => setProjectDialog(project)}
@@ -108,16 +114,20 @@ const Portfolio = () => {
         onClose={() => setProjectDialog(false)}
       >
         <DialogTitle onClose={() => setProjectDialog(false)}>
-          {projectDialog.title}
+          <Typography className="projectDialog_title">
+            {projectDialog.title}
+          </Typography>
         </DialogTitle>
-        {projectDialog.image ? (
-          <img
-            src={projectDialog.image[1]}
-            alt={projectDialog.title}
-            className="projectDialog_image"
-          />
-        ) : null}
-
+        <AwesomeSlider
+          cssModule={AwesomeSliderStyles}
+          className="projectDialog_slider"
+        >
+          {projectDialog.image
+            ? projectDialog.image.map((img, index) => (
+                <div data-src={img} key={index} />
+              ))
+            : null}
+        </AwesomeSlider>
         <DialogContent>
           <Typography className="projectDialog_description">
             {projectDialog.description}
@@ -132,7 +142,7 @@ const Portfolio = () => {
               rel="noreferrer"
               key={index}
             >
-              {link.icon}
+              <CustomButton text={link.info} icon={link.icon}></CustomButton>
             </a>
           ))}
         </DialogActions>
