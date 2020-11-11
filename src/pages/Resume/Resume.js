@@ -115,13 +115,13 @@ const Resume = () => {
       </Grid>
 
       {/* Skills */}
-      <Grid container className="section p_50 pb_45 graybg">
+      <Grid container className="section pt_30 pb_45 graybg">
         <Grid item className="section_title mb_30">
           <span></span>
           <h6 className="section_title_text">My Skills</h6>
         </Grid>
         <Grid item xs={12}>
-          <Grid container justify="space-between" spacing={3}>
+          <Grid container justify="space-between" spacing={2}>
             {resumeData.skills.map((skill, index) => (
               <Grid item xs={12} sm={6} md={3} key={index}>
                 <Paper elevation={0} className="skill">

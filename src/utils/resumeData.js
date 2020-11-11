@@ -188,7 +188,7 @@ export const resumeData = {
     // Project 2.
     {
       tag: "React",
-      caption: "Building a e-Commerse App with ReactJS",
+      caption: "Building an E-Commerse App with ReactJS",
       skills: ["React", "Redux", "Express", "NodeJS", "MongoDB", "Mongoose"],
       image: [
         "https://cdn.pixabay.com/photo/2019/09/30/15/23/online-shopping-4516043_1280.jpg",
@@ -196,7 +196,7 @@ export const resumeData = {
       ],
       title: "E-commerce app with React",
       description:
-        "Building a massive E-commerce app with React, Redux, Node, Express, MongoDB, Mongoose.",
+        "Build an ecommerce website like amazon. Design, develop and deploy a fully-function website like amazon using MERN stack",
       links: [
         {
           info: "Detail",
@@ -214,7 +214,7 @@ export const resumeData = {
     // Project 3.
     {
       tag: "Django",
-      caption: "Building a Airbnb App with Python and Django",
+      caption: "Building an Airbnb App with Python and Django",
       skills: [
         "Python",
         "Django",
@@ -241,6 +241,110 @@ export const resumeData = {
         {
           info: "Github",
           link: "https://github.com/junghong91/airbnb-clone",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+
+    // Project 4.
+    {
+      tag: "React",
+      caption: "Creating a COVID-19 Tracker/Stats Application.",
+      skills: ["React", "React Hooks", "Charts.JS", "Material UI"],
+      image: [
+        "https://cdn.pixabay.com/photo/2020/03/19/21/35/covid-4948866_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/10/15/08/53/virus-5656362_1280.jpg",
+      ],
+      title: "COVID-19 Tracker/Stats Application",
+      description:
+        "Creating a COVID-19 Tracker/Stats Application. Using React with the addition of Charts.js, Material UI, and many different modules",
+      links: [
+        {
+          info: "Detail",
+          link: "https://covid19-tracker-by-hong.netlify.app/",
+          icon: <SlideshowIcon />,
+        },
+        {
+          info: "Github",
+          link: "https://github.com/junghong91/COVID-19-Tracker",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+
+    // Project 5
+    {
+      tag: "React",
+      caption: "Creating a Tetris game using React Hooks",
+      skills: ["React", "React Hooks", "Styled Components"],
+      image: [
+        "https://cdn.pixabay.com/photo/2015/05/02/09/37/tetris-749690_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/04/03/00/29/tetris-308443_1280.png",
+      ],
+      title: "Tetris game with React Hooks",
+      description:
+        "Creating a Tetris game with React Hooks. Build Tetris from scratch using hooks like useState, useEffect, useCallback and custom hooks. Styling is done with Styled Components.",
+      links: [
+        {
+          info: "Detail",
+          link: "https://covid19-tracker-by-hong.netlify.app/",
+          icon: <SlideshowIcon />,
+        },
+        {
+          info: "Github",
+          link: "https://github.com/junghong91/COVID-19-Tracker",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+
+    // Project 6
+    {
+      tag: "React",
+      caption: "Building a Hotel Reservation Website using React",
+      skills: ["React", "React Hooks", "Local Storage", "ES6"],
+      image: [
+        "https://cdn.pixabay.com/photo/2015/09/02/12/40/swimming-pool-918593_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/09/18/03/28/travel-1677347_1280.jpg",
+      ],
+      title: "Hotel Reservation Website",
+      description:
+        "Building a beach resort website project. The project uses React router for routing, React context API for state management, Contentful headless CMS for data management, and Netlify to host the application.",
+      links: [
+        {
+          info: "Detail",
+          link: "https://react-resort-app-by-hong.netlify.app/",
+          icon: <SlideshowIcon />,
+        },
+        {
+          info: "Github",
+          link: "https://github.com/junghong91/HotelReservation",
+          icon: <GitHubIcon />,
+        },
+      ],
+    },
+
+    // Project 7
+    {
+      tag: "Javascript",
+      caption:
+        "Build a Realtime Multiplayer Game with NodeJS, SocketIO, Canvas, Gulp and ES6",
+      skills: ["Javascript", "SocketIO", "Canvas", "Gulp", "ES6"],
+      image: [
+        "https://cdn.pixabay.com/photo/2016/02/24/15/27/paint-1220088_1280.jpg",
+      ],
+      title: "Realtime Drawing Game",
+      description:
+        "Cloneing the game 'Catch Mind' where players paint a random word and get points by guessing what the other ones are playing",
+      links: [
+        {
+          info: "Detail",
+          link: "https://guess-hong-mind.herokuapp.com/",
+          icon: <SlideshowIcon />,
+        },
+        {
+          info: "Github",
+          link: "https://github.com/junghong91/guess-mine",
           icon: <GitHubIcon />,
         },
       ],

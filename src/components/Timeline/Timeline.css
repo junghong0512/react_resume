@@ -13,6 +13,14 @@
   min-height: 80px !important;
 }
 
+.timeline .MuiTimelineConnector-root {
+  margin-top: -7px;
+  margin-bottom: -7px;
+}
+
+.timeline .MuiTimelineConnector-root:last-child {
+}
+
 .timeline .MuiTimelineItem-root {
   min-height: 0px;
 }
