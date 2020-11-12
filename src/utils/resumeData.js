@@ -23,17 +23,17 @@ export const resumeData = {
     facebook: {
       link:
         "https://www.facebook.com/profile.php?id=100001442749014&locale=ko_KR",
-      text: "My Facebook",
+      text: "View Facebook",
       icon: <FacebookIcon />,
     },
     github: {
       link: "https://github.com/junghong91",
-      text: "My Github",
+      text: "View Github",
       icon: <GitHubIcon />,
     },
     instagram: {
       link: "https://www.instagram.com/__hongy/",
-      text: "My Instagram",
+      text: "View Instagram",
       icon: <InstagramIcon />,
     },
   },
@@ -131,8 +131,10 @@ export const resumeData = {
       list: [
         { name: "NodeJS", skill: 90 },
         { name: "MongoDB", skill: 90 },
-        { name: "AWS EC2", skill: 80 },
+        { name: "GraphQL", skill: 90 },
         { name: "My SQL", skill: 80 },
+        { name: "AWS S2", skill: 80 },
+        { name: "AWS EC2", skill: 80 },
       ],
     },
     {
