@@ -1,4 +1,5 @@
 .footer {
+  opacity: 0.8;
   background-color: #1e1e1e;
   color: white;
   display: flex;

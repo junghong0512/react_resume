@@ -21,58 +21,54 @@ const Header = (props) => {
         </Navbar.Brand>
       </Nav.Link>
 
-      <Navbar.Toggle />
+      <Nav className="header_left">
+        {/* Resume Link */}
+        <Nav.Link
+          as={NavLink}
+          to="/"
+          className={pathName === "/" ? "header_link_active" : "header_link"}
+        >
+          Resume
+        </Nav.Link>
 
-      <Navbar.Collapse>
-        <Nav className="header_left">
-          {/* Resume Link */}
-          <Nav.Link
-            as={NavLink}
-            to="/"
-            className={pathName === "/" ? "header_link_active" : "header_link"}
+        {/* Portfolio Link */}
+        <Nav.Link
+          as={NavLink}
+          to="/portfolio"
+          className={
+            pathName === "/portfolio" ? "header_link_active" : "header_link"
+          }
+        >
+          Portfolio
+        </Nav.Link>
+
+        {/* Contact Link */}
+        <Nav.Link
+          as={NavLink}
+          to="/contact"
+          className={
+            pathName === "/contact" ? "header_link_active" : "header_link"
+          }
+        >
+          Contact
+        </Nav.Link>
+      </Nav>
+
+      <div className="header_right">
+        {Object.keys(resumeData.socials).map((key, i) => (
+          <a
+            href={resumeData.socials[key].link}
+            target="_blank"
+            rel="noreferrer"
+            key={i}
           >
-            Resume
-          </Nav.Link>
-
-          {/* Portfolio Link */}
-          <Nav.Link
-            as={NavLink}
-            to="/portfolio"
-            className={
-              pathName === "/portfolio" ? "header_link_active" : "header_link"
-            }
-          >
-            Portfolio
-          </Nav.Link>
-
-          {/* Contact Link */}
-          <Nav.Link
-            as={NavLink}
-            to="/contact"
-            className={
-              pathName === "/contact" ? "header_link_active" : "header_link"
-            }
-          >
-            Contact
-          </Nav.Link>
-        </Nav>
-
-        <div className="header_right">
-          {Object.keys(resumeData.socials).map((key, i) => (
-            <a
-              href={resumeData.socials[key].link}
-              target="_blank"
-              rel="noreferrer"
-              key={i}
-            >
-              {resumeData.socials[key].icon}
-            </a>
-          ))}
-          <Link to="/contact" className="header_button_link">
-            <CustomButton text={"Hire Me"} icon={<Telegram />} />
-          </Link>
-        </div>
-      </Navbar.Collapse>
+            {resumeData.socials[key].icon}
+          </a>
+        ))}
+        <Link to="/contact" className="header_button_link">
+          <CustomButton text={"Hire Me"} icon={<Telegram />} />
+        </Link>
+      </div>
     </Navbar>
   );
 };

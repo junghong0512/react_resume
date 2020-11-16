@@ -57,6 +57,10 @@
 /* End of Services */
 
 /* Skills */
+.skill_container {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 
 .skill {
   border-radius: 8px;

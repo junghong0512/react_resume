@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <>
       {/* Contact */}
-      <Grid container className="section pb_45 pt_45 mt_30 mb_30" spacing={6}>
+      <Grid container className="section pb_45 pt_30 mt_30 mb_30" spacing={6}>
         {/* Contact form */}
         <Grid item xs={12} lg={7}>
           <Grid container>
