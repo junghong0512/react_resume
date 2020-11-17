@@ -1,13 +1,13 @@
 .profile {
-  opacity: 0.6;
-  background-color: #1e1e1e;
+  /* opacity: 0.6; */
+  background-color: var(--main-background-color);
   border-radius: 6px;
   width: 100%;
   display: inline-block;
 }
 
 .profile_name {
-  color: white;
+  color: var(--text-color);
   line-height: 18px;
   padding: 20px;
 }
@@ -20,7 +20,7 @@
 
 .profile_name .title {
   font-size: 13px;
-  color: #777;
+  color: var(--text-rose-gold);
 }
 
 .profile_image {
@@ -47,17 +47,17 @@
 
 .timelineItem_text {
   font-size: 13.5px !important;
-  color: #787878;
+  color: var(--text-color);
   font-weight: 400;
 }
 
 .timelineItem_text > span {
-  color: white;
+  color: var(--text-soft-gold);
   text-transform: capitalize;
 }
 
 .timelineItem_text > a {
-  color: #787878;
+  color: var(--text-color);
   text-decoration: none;
 }
 

@@ -1,6 +1,8 @@
 import React from "react";
 import emailjs from "emailjs-com";
 
+import { createMuiTheme } from "@material-ui/core/styles";
+import purple from "@material-ui/core/colors/purple";
 import { Grid, TextField, Typography } from "@material-ui/core";
 import EmailIcon from "@material-ui/icons/Email";
 
@@ -119,7 +121,11 @@ const Contact = () => {
               <Grid container className="contactInfo_socialsContainer">
                 {Object.keys(resumeData.socials).map((key, index) => (
                   <Grid item className="contactInfo_social" key={index}>
-                    <a href={resumeData.socials[key].link} about="_blank">
+                    <a
+                      href={resumeData.socials[key].link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       {resumeData.socials[key].icon}
                     </a>
                   </Grid>

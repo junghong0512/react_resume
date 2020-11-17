@@ -21,13 +21,13 @@ const Footer = () => {
             {resumeData.name}
           </a>
           <br />
-          Clone idea from{" "}
+          Visit my Github Page{"  "}
           <a
-            href="https://themeforest.net/user/tavonline/"
+            href="https://github.com/junghong91"
             target="_blank"
             rel="noreferrer"
           >
-            Tavonline
+            Github Link
           </a>
         </Typography>
       </div>

@@ -1,13 +1,13 @@
 /* Contact Section */
 
 .contactInfo_item {
+  color: var(--text-rose-gold);
   font-size: 14px;
-  color: #787878;
   line-height: 32px !important;
 }
 
 .contactInfo_item > span {
-  color: black;
+  color: var(--text-soft-gold);
   font-weight: 500;
 }
 
@@ -16,13 +16,26 @@
 }
 
 .contactInfo_social > a > .MuiSvgIcon-root {
-  font-size: 22px;
+  font-size: 25px;
   margin-right: 15px;
-  color: darkslategray;
+  color: var(--text-rose-gold) !important;
 }
 
 .contactInfo_social > a > .MuiSvgIcon-root:hover {
-  opacity: 0.5;
+  color: var(--text-color) !important;
+  /* opacity: 0.5; */
+}
+
+.MuiFormLabel-root {
+  color: var(--text-rose-gold) !important;
+}
+
+.MuiInputBase-root::before {
+  border-bottom-color: var(--text-rose-gold) !important;
+}
+
+.MuiInputBase-root > input {
+  color: var(--text-color) !important;
 }
 
 /* End of Contact Section */

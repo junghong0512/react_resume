@@ -5,6 +5,7 @@
 }
 
 .customTabs .customTabs_item {
+  color: var(--text-color);
   padding: 0px;
   min-width: 0px;
   margin-right: 20px;
@@ -32,7 +33,12 @@
 }
 
 .customCard .MuiButtonBase-root {
+  background-color: var(--main-background-darker);
   outline-width: 0px;
+}
+
+.customCard .MuiButtonBase-root:hover {
+  background-color: var(--main-background-color);
 }
 
 .customCard .customCard_image {
@@ -40,12 +46,13 @@
 }
 
 .customCard .customCard_title {
+  color: var(--text-rose-gold);
   font-weight: 500 !important;
 }
 
 .customCard .customCard_caption {
   font-weight: 400 !important;
-  color: gray;
+  color: var(--text-soft-gold);
 }
 
 /* End of Cards */

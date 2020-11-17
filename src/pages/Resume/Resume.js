@@ -115,7 +115,7 @@ const Resume = () => {
       </Grid>
 
       {/* Skills */}
-      <Grid container className="section pt_30 pb_45 graybg skill_container">
+      <Grid container className="section pt_30 pb_45 skill_container">
         <Grid item className="section_title mb_30">
           <span></span>
           <h6 className="section_title_text">My Skills</h6>

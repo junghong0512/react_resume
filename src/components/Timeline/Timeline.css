@@ -6,6 +6,7 @@
 
 /* Header Title */
 .timeline .timeline_header {
+  color: var(--text-color);
   padding-top: 7px;
 }
 
@@ -16,9 +17,6 @@
 .timeline .MuiTimelineConnector-root {
   margin-top: -7px;
   margin-bottom: -7px;
-}
-
-.timeline .MuiTimelineConnector-root:last-child {
 }
 
 .timeline .MuiTimelineItem-root {

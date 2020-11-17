@@ -1,5 +1,12 @@
 :root {
-  --main-color: #ffd700;
+  --main-color: #feda6a;
+  --main-background-color: #393f4d;
+  --main-background-darker: #333845;
+  --text-color: #d4d4dc;
+  --text-secondary-color: #1d1e22;
+  --text-soft-gold: #d1bfa7;
+  --text-rose-gold: #bd8c7d;
+  --text-light-gray: #dcdcdc;
 }
 
 /* Margins and Paddings */
@@ -48,13 +55,15 @@
 /* End of Margins and Paddings */
 
 .container_shadow {
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+  /* box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
   -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
-  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13); */
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  border-radius: 6px;
 }
 
 .main_content {
-  background-color: #fff;
+  background-color: var(--main-background-color);
   border-radius: 6px;
   /* min-height: 100vh; */
   margin-bottom: 30px;
@@ -62,6 +71,7 @@
 }
 
 .section_title {
+  color: var(--text-color);
   position: relative;
   display: inline-block;
   padding: 0 3px;
@@ -87,8 +97,4 @@
 .section {
   padding-left: 30px;
   padding-right: 30px;
-}
-
-.graybg {
-  background-color: #fafafa;
 }
