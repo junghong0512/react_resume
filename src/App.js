@@ -5,6 +5,7 @@ import {
   Container,
   createMuiTheme,
   Grid,
+  makeStyles,
   MuiThemeProvider,
 } from "@material-ui/core";
 
@@ -16,8 +17,13 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import Resume from "./pages/Resume/Resume";
 
 import "./App.css";
+import ScrollToTop from "./utils/ScrollToTop";
+import HomeHeader from "./components/HomeHeader/HomeHeader";
 
 const theme = createMuiTheme({
+  typography: {
+    fontFamily: "revert",
+  },
   palette: {
     primary: {
       main: "#d1bfa7",
@@ -28,9 +34,26 @@ const theme = createMuiTheme({
   },
 });
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    minHeight: "100vh",
+    backgroundImage: `url(${
+      process.env.PUBLIC_URL + "/assets/seascape-5588651_1280.webp"
+    })`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  },
+}));
+
 function App() {
+  const classes = useStyles();
+
   return (
     <MuiThemeProvider theme={theme}>
+      <div className={classes.root}>
+        <HomeHeader />
+      </div>
       <Container className="mt_60">
         <Grid container spacing={3}>
           <Grid item xs={12} sm={12} md={4} lg={3}>
