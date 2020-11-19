@@ -48,17 +48,17 @@ function App() {
 
   return (
     <MuiThemeProvider theme={theme}>
-      <div className={classes.root} id="home_header">
-        <HomeHeader />
-      </div>
+      <Router>
+        <div className={classes.root} id="home_header">
+          <HomeHeader />
+        </div>
 
-      <Container className="mt_60" id="main_content">
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={12} md={4} lg={3}>
-            <Profile className="container_shadow" checked={checked} />
-          </Grid>
-          <Grid item xs>
-            <Router>
+        <Container className="mt_60" id="main_content">
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={12} md={4} lg={3}>
+              <Profile className="container_shadow" checked={checked} />
+            </Grid>
+            <Grid item xs>
               <Header checked={checked} />
               <div className="main_content container_shadow">
                 <Switch>
@@ -67,11 +67,11 @@ function App() {
                   <Route path="/Contact" component={Contact} />
                 </Switch>
               </div>
-            </Router>
-            <Footer checked={checked} />
+              <Footer checked={checked} />
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
+        </Container>
+      </Router>
     </MuiThemeProvider>
   );
 }

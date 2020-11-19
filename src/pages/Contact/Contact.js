@@ -79,7 +79,7 @@ const Contact = () => {
           </Grid>
         </Grid>
 
-        <Grid xs={12} lg={1}></Grid>
+        <Grid item xs={12} lg={1}></Grid>
 
         {/* Contact information */}
         <Grid item xs={12} lg={5}>

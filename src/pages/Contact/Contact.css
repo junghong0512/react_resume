@@ -38,6 +38,10 @@
   color: var(--text-color) !important;
 }
 
+.MuiInputBase-root > textarea {
+  color: var(--text-color) !important;
+}
+
 /* End of Contact Section */
 
 /* Map */

@@ -1,0 +1,7 @@
+.MuiMenu-paper {
+  background-color: var(--main-background-color) !important;
+}
+
+.MuiButtonBase-root {
+  color: var(--text-color) !important;
+}
