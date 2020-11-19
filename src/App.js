@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import {
   Container,
-  createMuiTheme,
   Grid,
   makeStyles,
   MuiThemeProvider,
 } from "@material-ui/core";
+
+import { unstable_createMuiStrictModeTheme as createMuiTheme } from "@material-ui/core";
 
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";

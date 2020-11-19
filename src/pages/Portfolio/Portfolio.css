@@ -1,7 +1,7 @@
 /* Tabs */
 
 .customTabs {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .customTabs .customTabs_item {
@@ -62,6 +62,10 @@
 .projectDialog .MuiPaper-root {
   height: 90%;
   width: 90%;
+  background-color: #e7e7e7 !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -3px 6px 0px inset;
 }
 
 .projectDialog .projectDialog_slider {
@@ -69,16 +73,18 @@
 }
 
 .projectDialog .projectDialog_title {
+  text-align: center;
+  color: var(--main-background-color);
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .projectDialog .projectDialog_description {
-  margin-top: 10px !important;
+  margin-top: 15px !important;
 }
 .projectDialog .projectDialog_actions {
   justify-content: center !important;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .projectDialog .projectDialog_icon {
   color: darkslategray;

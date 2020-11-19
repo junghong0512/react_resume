@@ -1,8 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
 
-import { createMuiTheme } from "@material-ui/core/styles";
-import purple from "@material-ui/core/colors/purple";
 import { Grid, TextField, Typography } from "@material-ui/core";
 import EmailIcon from "@material-ui/icons/Email";
 
@@ -36,15 +34,15 @@ const Contact = () => {
   return (
     <>
       {/* Contact */}
-      <Grid container className="section pb_45 pt_30 mt_30 mb_30" spacing={6}>
+      <Grid container className="section pb_45 pt_45">
         {/* Contact form */}
-        <Grid item xs={12} lg={7}>
+        <Grid item xs={12} lg={6} className="mb_45">
           <Grid container>
-            <Grid item className="section_title mb_30">
-              <span></span>
-              <h6 className="section_title_text">Contact Form</h6>
-            </Grid>
             <Grid item xs={12}>
+              <Grid item className="section_title mb_30">
+                <span></span>
+                <h6 className="section_title_text">Contact Form</h6>
+              </Grid>
               <form onSubmit={sendEmail}>
                 <Grid container spacing={3}>
                   <Grid item xs={12} sm={6}>
@@ -80,6 +78,8 @@ const Contact = () => {
             </Grid>
           </Grid>
         </Grid>
+
+        <Grid xs={12} lg={1}></Grid>
 
         {/* Contact information */}
         <Grid item xs={12} lg={5}>
@@ -136,7 +136,7 @@ const Contact = () => {
         </Grid>
         <Grid item xs={12}>
           <Grid container>
-            <Grid item className="section_title mb_30">
+            <Grid item className="section_title mb_30 mt_60">
               <span></span>
               <h6 className="section_title_text">My Location</h6>
             </Grid>

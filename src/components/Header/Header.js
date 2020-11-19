@@ -18,7 +18,7 @@ const Header = ({ checked }) => {
     // <Navbar expand="lg" sticky="top" className="header">
 
     <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
-      <Navbar expand="lg" className="header">
+      <Navbar className="header">
         {/* Home Link */}
         <Scroll to="home_header" smooth={true}>
           <Nav.Link as={NavLink} to="/" className="header_navlink">

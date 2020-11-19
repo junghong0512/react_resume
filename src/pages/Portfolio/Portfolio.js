@@ -38,8 +38,8 @@ const Portfolio = () => {
       <Grid item xs={12} className="tabsContainer">
         <Tabs
           value={tabValue}
-          textColor="red"
-          indicatorColor="red"
+          textColor="primary"
+          indicatorColor="primary"
           className="customTabs"
           onChange={(event, newValue) => setTabValue(newValue)}
         >
