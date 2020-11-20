@@ -1,19 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link as Scroll } from "react-scroll";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  AppBar,
-  Button,
-  Collapse,
-  IconButton,
-  Menu,
-  MenuItem,
-  Toolbar,
-} from "@material-ui/core";
-import { Sort, ExpandMore } from "@material-ui/icons";
+import { AppBar, Button, Collapse, Toolbar } from "@material-ui/core";
+import { ExpandMore } from "@material-ui/icons";
 
 import "./HomeHeader.css";
-import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -56,9 +47,6 @@ const useStyles = makeStyles((theme) => ({
     color: "#feda6a",
     fontSize: "4rem",
   },
-  menuItem: {
-    color: "whtie",
-  },
 }));
 
 export default function HomeHeader() {
@@ -69,16 +57,6 @@ export default function HomeHeader() {
   useEffect(() => {
     setChecked(true);
   }, []);
-
-  const [anchorEl, setAnchorEl] = useState(null);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   const refreshPage = () => {
     window.location.reload();
@@ -93,33 +71,6 @@ export default function HomeHeader() {
               My<span className={classes.colorText}>Resume.</span>
             </Button>
           </h1>
-          {/* <IconButton
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            onClick={handleClick}
-          >
-            <Sort className={classes.icon} />
-          </IconButton>
-          <Menu
-            id="simple-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-            className={classes.menu}
-          >
-            <MenuItem onClick={handleClose} className={classes.menuItem}>
-              <Link to="/">Resume</Link>
-            </MenuItem>
-            <MenuItem onClick={handleClose} className={classes.menuItem}>
-              <Link to="/portfolio">Portfolio</Link>
-            </MenuItem>
-            <MenuItem onClick={handleClose} className={classes.menuItem}>
-              <Scroll to="main_content">
-                <Link to="/contact">Contact</Link>
-              </Scroll>
-            </MenuItem>
-          </Menu> */}
         </Toolbar>
       </AppBar>
       <Collapse
