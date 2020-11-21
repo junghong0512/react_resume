@@ -81,6 +81,11 @@
 
 .projectDialog .projectDialog_description {
   margin-top: 15px !important;
+  margin-bottom: 15px;
+}
+.projectDialog .projectDialog_skill_chip {
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 .projectDialog .projectDialog_actions {
   justify-content: center !important;

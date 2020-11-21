@@ -4,10 +4,12 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
+  Chip,
   Dialog,
   DialogActions,
   DialogContent,
   DialogTitle,
+  Divider,
   Grid,
   Grow,
   Tab,
@@ -132,7 +134,14 @@ const Portfolio = () => {
           <Typography className="projectDialog_description">
             {projectDialog.description}
           </Typography>
+
+          <div className="projectDialog_skill_container">
+            {projectDialog?.skills?.map((skill, index) => (
+              <Chip className="projectDialog_skill_chip" label={skill} />
+            ))}
+          </div>
         </DialogContent>
+
         <DialogActions className="projectDialog_actions">
           {projectDialog?.links?.map((link, index) => (
             <a
