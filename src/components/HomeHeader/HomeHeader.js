@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link as Scroll } from "react-scroll";
 import { makeStyles } from "@material-ui/core/styles";
-import { AppBar, Button, Collapse, Toolbar } from "@material-ui/core";
+import {
+  AppBar,
+  Button,
+  Collapse,
+  Toolbar,
+  Typography,
+} from "@material-ui/core";
 import { ExpandMore } from "@material-ui/icons";
-
+import Typed from "react-typed";
 import "./HomeHeader.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -37,11 +43,15 @@ const useStyles = makeStyles((theme) => ({
   container: {
     textAlign: "center",
   },
-  title: {
-    fontSize: "4.5rem",
-    color: "#d4d4dc",
-    fontWeight: "600",
-    marginBottom: "5rem",
+  titleName: {
+    fontSize: "4rem",
+    color: "#bd8c7d",
+    marginBottom: "3rem",
+  },
+  titleDescription: {
+    fontSize: "3rem",
+    color: "#d1bfa7",
+    marginBottom: "3rem",
   },
   goDown: {
     color: "#feda6a",
@@ -79,11 +89,16 @@ export default function HomeHeader() {
         collapsedHeight={20}
       >
         <div className={classes.container}>
-          <h1 className={classes.title}>
-            Welcome to <br />
-            my
-            <span className={classes.colorText}> Resume.</span>
-          </h1>
+          <Typography className={classes.titleName}>
+            <Typed strings={["Jung Hong"]} typeSpeed={40} />
+          </Typography>
+          <Typography className={classes.titleDescription}>
+            <Typed
+              strings={["Web Developer", "Full Stack Developer"]}
+              typeSpeed={40}
+              loop
+            />
+          </Typography>
           <Scroll to="main_content" smooth={true}>
             <Button
               variant="outlined"
